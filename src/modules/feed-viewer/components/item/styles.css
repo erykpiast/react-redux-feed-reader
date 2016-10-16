@@ -1,0 +1,10 @@
+.description {
+
+}
+
+.description img { /* content images */
+  float: left;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  max-width: 100px;
+}

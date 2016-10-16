@@ -19,12 +19,11 @@ module.exports = merge(config, {
         },
       },
     }, {
-      test: /\.scss$/,
+      test: /\.css$/,
       loaders: [
         'style',
-        'css',
+        'css?modules',
         'postcss',
-        'sass',
       ],
     }],
   },

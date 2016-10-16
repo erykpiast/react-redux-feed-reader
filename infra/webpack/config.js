@@ -1,6 +1,8 @@
 const autoprefixer = require('autoprefixer');
 const Html = require('html-webpack-plugin');
 const path = require('path');
+const colors = require('../../src/styles/colors.json');
+const simpleVars = require('postcss-simple-vars')({ silent: true, variables: colors });
 
 const srcDir = path.resolve(__dirname, '../../src');
 
@@ -38,11 +40,15 @@ module.exports = {
     }),
   ],
   postcss() {
-    return [autoprefixer];
+    return [autoprefixer, simpleVars];
   },
   resolve: {
     alias: {
+      request: require.resolve('browser-request'),
+
+      components: path.join(srcDir, '/components'),
       modules: path.join(srcDir, '/modules'),
+      styles: path.join(srcDir, '/styles'),
       utils: path.join(srcDir, '/utils'),
     },
     extensions: [

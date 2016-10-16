@@ -1,0 +1,18 @@
+.wrapper {
+  border: 1px solid $primary;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+.url {
+  display: inline-block;
+}
+
+.url + .url {
+  border-left: 1px solid $primary;
+  margin-left: 1em;
+  padding-left: 1em;
+}

@@ -1,0 +1,55 @@
+{
+  "type": "atom",
+  "metadata": {
+    "title": [
+      "the feed"
+    ],
+    "url": [
+      {
+        "$": {
+          "type": "text/html",
+          "rel": "alternate",
+          "href": "http://example.com"
+        }
+      },
+      {
+        "$": {
+          "type": "application/atom+xml",
+          "rel": "self",
+          "href": "http://example.com/feed"
+        }
+      }
+    ],
+    "id": [
+      "unique_feed_id"
+    ]
+  },
+  "items": [
+    {
+      "id": [
+        "unique_id"
+      ],
+      "title": [
+        {
+          "_": "the title",
+          "$": {
+            "type": "html"
+          }
+        }
+      ],
+      "desc": [
+        {
+          "_": "<div>some description</div>",
+          "$": {
+            "type": "html"
+          }
+        }
+      ],
+      "category": [],
+      "link": "http://example.com/article/unique_id",
+      "date": 1476533202000,
+      "updated": 1476533202000,
+      "media": {}
+    }
+  ]
+}

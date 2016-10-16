@@ -12,11 +12,10 @@ module.exports = merge(config, {
       exclude: /node_modules/,
       loader: 'babel',
     }, {
-      test: /\.scss$/,
+      test: /\.css$/,
       loader: Extract.extract([
-        'css',
+        'css?modules',
         'postcss',
-        'sass',
       ]),
     }],
   },

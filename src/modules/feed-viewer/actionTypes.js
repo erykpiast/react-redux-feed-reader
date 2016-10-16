@@ -1,0 +1,3 @@
+export const ERROR = 'FEED_VIEWER_ERROR';
+export const REQUEST = 'FEED_VIEWER_REQUEST';
+export const SUCCESS = 'FEED_VIEWER_SUCCESS';
