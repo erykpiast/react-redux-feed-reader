@@ -1,6 +1,6 @@
 {
   "name": "react-redux-feed-reader",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple Atom feed reader demonstrating React & Redux power",
   "main": "dist/index.js",
   "author": "eryk.piast@gmail.com",
